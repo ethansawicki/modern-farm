@@ -1,11 +1,10 @@
 
 
-export const createCatalog = (catalog) => {
+export const createCatalog = (food) => {
     let div = ""
-    for (const food of catalog) {
-        div += `<section class="plant">${food.type}</section>`
+    for (const array of food) {
+        div += `<section class="plant">${array.type}</section>`
     }
-    div += catalog.join("")
     document.querySelector(".container").innerHTML = div
 }
 
